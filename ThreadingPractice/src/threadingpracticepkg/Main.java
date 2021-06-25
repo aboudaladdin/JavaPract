@@ -1,7 +1,5 @@
 package threadingpracticepkg;
 
-
-
 public class Main
 {
 	public static void main(String[] args)
@@ -12,25 +10,5 @@ public class Main
 		 th1.start();
 		 myThreadObj.start();
 		 new Thread(new TestRunnable("On_the_Fly")).start();
-
 	}
-	
-	
-	 
-	
-//	class A
-//	{
-//		protected A()
-//		{
-//			System.out.println("A constructor");
-//		}
-//		
-//	}
-//	public class Beta extends A
-//	{
-//		public Beta()
-//		{
-//			System.out.println("Beta constructor");
-//		}
-//	}
 }
