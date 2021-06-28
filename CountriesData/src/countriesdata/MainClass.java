@@ -48,11 +48,13 @@ public class MainClass
 		
 		
 		System.out.println("________ Search Cities By Code ________");
+		
 		String countryCode = "";
+		Scanner scanner = new Scanner(System.in);
 		while(!countryCode.equals("0"))
 		{
 	        System.out.println("\nEnter a Country Code, or 0 to exit:");
-	        Scanner scanner = new Scanner(System.in);
+	        
 	        countryCode = scanner.nextLine();
 	        try
 	        {
@@ -66,6 +68,7 @@ public class MainClass
 	        }
 
 		}
+		scanner.close();
 	}
 
 }
