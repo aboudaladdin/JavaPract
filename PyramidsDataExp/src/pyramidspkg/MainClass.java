@@ -6,6 +6,7 @@ public class MainClass
 {
 	public static void main(String[] args) 
 	{
+		//-- path
 		String path = "pyramids.csv";
 
 		new Thread(new Runnable() 
