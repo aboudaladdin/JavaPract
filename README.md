@@ -9,3 +9,6 @@ Java Course Projects
 * ![Highest City Population](https://github.com/aboudaladdin/JavaPract/blob/master/CountriesData/out2.png)
 ##### Average Population ~World,Max Population Country ,Highest Population Capital
 * ![average population ~World,max  ,highest population capital](https://github.com/aboudaladdin/JavaPract/blob/master/CountriesData/out3.png)
+* 
+* ##### Get Cities By Code
+* ![cities](https://github.com/aboudaladdin/JavaPract/blob/master/CountriesData/out4.png)
