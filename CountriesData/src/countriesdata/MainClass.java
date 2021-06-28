@@ -1,6 +1,7 @@
 package countriesdata;
 
 import java.io.IOException;
+import java.util.Scanner;
  
 
 public class MainClass
@@ -44,7 +45,26 @@ public class MainClass
 		System.out.println("________ Highest Population Capital ________");
 		System.out.println(worldDao.getHighestPopulationCapital());
 		System.out.println("_________________________________________");
+		
+		System.out.println("________ Search Cities By Code ________");
+		String countryCode = "";
+		while(!countryCode.equals("0"))
+		{
+	        System.out.println("\nEnter a Country Code, or 0 to exit:");
+	        Scanner scanner = new Scanner(System.in);
+	        countryCode = scanner.nextLine();
+	        try
+	        {
+	        worldDao.getSortedCities_by_CCode()
+	        		.getOrDefault(countryCode.toUpperCase(), null)
+	        		.forEach(CC -> System.out.println("---"+ CC.getName() + "---" + CC.getPopulation()));
+	        }
+	        catch(NullPointerException e)
+	        {
+	        	System.out.println("Key Error");
+	        }
 
+		}
 	}
 
 }
