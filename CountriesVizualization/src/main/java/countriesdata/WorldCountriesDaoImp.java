@@ -144,7 +144,7 @@ public class WorldCountriesDaoImp implements WorldCountriesDao
 	{
 		Optional<City>	mCity = allCities.stream().filter(city -> allCountries.stream()
 					.map(Country::getCapital)
-					.anyMatch(c_capital -> c_capital == city.getId()))
+					.anyMatch(c_capital -> c_capital == city.getId() ))
 					.max(Comparator.comparing(City::getPopulation));
 
 		return mCity.orElseThrow(NoSuchElementException::new);
