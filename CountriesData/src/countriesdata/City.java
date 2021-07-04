@@ -12,6 +12,7 @@ public class City
 	private int population;
 	private String cityCode;
 	
+
 	public City(String streamData)
 	{
 		Stream<String> stream = Arrays.stream(streamData.split( "," )) ;
