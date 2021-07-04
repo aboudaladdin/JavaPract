@@ -16,7 +16,6 @@ public class MainClass
 
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException 
 	{
-		
 		List<TitanicPassenger> allPassengers = getPassengersFromJsonFile();
 		allPassengers.forEach(k -> System.out.println(k));
 		XVisuals.graphPassengerAges(allPassengers);
